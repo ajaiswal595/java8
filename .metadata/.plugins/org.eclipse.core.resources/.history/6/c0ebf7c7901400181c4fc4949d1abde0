@@ -1,0 +1,10 @@
+package com.java8.streamapi;
+
+public class FirstPredicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

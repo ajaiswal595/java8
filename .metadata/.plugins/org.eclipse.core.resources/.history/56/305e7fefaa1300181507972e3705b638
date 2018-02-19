@@ -1,0 +1,40 @@
+import java.io.File;
+import java.io.FileFilter;
+
+public class MainFileFilterLambda {
+
+	public static void main(String[] args) {
+
+		/*
+		 * calling implemented class
+		 * 
+		 */
+		
+		//1st way
+			File dir = new File("E:\\ajaiswal595Repository\\DataStructure\\DataStructure\\src\\com\\linear\\ds");
+			File[] files = dir.listFiles(new FileFilterImpletemtedClass());
+			
+			for(File f : files) {
+				System.out.println(f);
+			}
+			
+			
+			
+			//2nd way
+			new FileFilterImpletemtedClass().getAllJavaFileName();
+
+			/*
+			 * 
+			 * calling annonymous class
+			 */
+		
+			File dir1 = new File("E:\\ajaiswal595Repository\\DataStructure\\DataStructure\\src\\com\\linear\\ds");
+			File[] files1 = dir1.listFiles(new FileFilterAnnonymousClass());
+			
+			for(File f : files1) {
+				System.out.println(f);
+			}
+		FileFilter filter = (File pathName) -> pathName.getName().endsWith(".java");
+	}
+
+}

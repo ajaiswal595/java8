@@ -1,0 +1,11 @@
+import java.io.File;
+import java.io.FileFilter;
+
+public class MainFileFilterLambda {
+
+	public static void main(String[] args) {
+
+		FileFilter filter = (File pathName) -> pathName.getName().endsWith(".java");
+	}
+
+}

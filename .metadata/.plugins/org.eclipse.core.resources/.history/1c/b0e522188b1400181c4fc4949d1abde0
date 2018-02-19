@@ -1,0 +1,9 @@
+package com.java8.lmdaex;
+
+public class PredicateNewPattern {
+
+	public static void main(String[] args) {
+		java.util.function.Predicate<T>
+	}
+
+}
